@@ -25,7 +25,8 @@ function initializeCode() {
     } else {
       const contentDiv = document.getElementById('content');
       contentDiv.innerHTML = `
-        <p>Please <a href="/register.html">Register</a> or <a href="/login.html">Login</a></p>
+        <a href="/login.html">Login</a>
+        <a href="/register.html">Register</a>
       `;
     }
 }
