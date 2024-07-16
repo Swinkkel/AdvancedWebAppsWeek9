@@ -1,6 +1,19 @@
 doctype html
 html
   head
-    title Login
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="javascripts/register.js")
+    script()
   body
-    h1 Login Page
+    h1 Login page 
+    div.container 
+        form(id="loginForm" action="/api/user/login" method="POST")
+            div
+                label(for="email") Email:
+                input(type="email" name="email" required)
+            div
+                label(for="password") Password:
+                input(type="password" name="password" required)
+            div
+                input(type="submit" id="submit" value="Register") 
